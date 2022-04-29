@@ -13,16 +13,18 @@ MonoBehaviour:
   m_Name: Card1
   m_EditorClassIdentifier: 
   title: Test Card 1
-  statement: "Necesito subir mi porcentajede opinion publica  positva \n\xBFOrganizo
-    una marcha a mi favor?"
+  statement: "Tengo serios problemas de transporte publico.\n\xBFPrometo viajes interestlares
+    an CABA?"
   icon: {fileID: 0}
   isTutorial: 0
   cardGroup: 1
   positiveModifiers:
   - StatID: 1
-    Value: 5
+    Value: 10
   - StatID: 2
+    Value: 5
+  - StatID: 0
     Value: 5
   negativeModifiers:
   - StatID: 3
-    Value: -5
+    Value: -10
