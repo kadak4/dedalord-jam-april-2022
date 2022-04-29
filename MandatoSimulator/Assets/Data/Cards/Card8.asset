@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Test Card 8
   statement: "Necesito recortar el gasto publico\n\xBFVendo las empresas estatales?"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: ea3e383ecdd13db4abbf8e407d094498, type: 3}
   isTutorial: 0
   cardGroup: 0
   positiveModifiers:

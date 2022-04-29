@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Test Card 4
   statement: "Necestito mas presencia en los medios\n\xBFArmo mi propio multimedio?"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: c73308217b3345e44ac8dd997c78809f, type: 3}
   isTutorial: 0
   cardGroup: 1
   positiveModifiers:

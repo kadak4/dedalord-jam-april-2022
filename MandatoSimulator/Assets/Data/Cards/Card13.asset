@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Test Card 9
   statement: "Necesito mucha plata ya\n\xBFPido mucha plata al FMI?"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 77d869cf101fba14a95ed106883f4d0c, type: 3}
   isTutorial: 0
   cardGroup: 0
   positiveModifiers:

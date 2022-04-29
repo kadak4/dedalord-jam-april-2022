@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Card11
   m_EditorClassIdentifier: 
   title: Test Card 9
-  statement: "Dos naciones tan en conflicto belico\n\xBFLeas vendo armas a las dos
-    naciones?"
-  icon: {fileID: 0}
+  statement: "Dos naciones estan en conflicto belico\n\xBFLeas vendo armas a las
+    dos naciones?"
+  icon: {fileID: 21300000, guid: ea3e383ecdd13db4abbf8e407d094498, type: 3}
   isTutorial: 0
   cardGroup: 0
   positiveModifiers:

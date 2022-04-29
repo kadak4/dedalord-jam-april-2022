@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Test Card 7
   statement: "Necesito entretener a las masas\n\xBFOrganizo un mundial?"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: ecdbbd3e822f92d499e180a0451eb39c, type: 3}
   isTutorial: 0
   cardGroup: 1
   positiveModifiers:

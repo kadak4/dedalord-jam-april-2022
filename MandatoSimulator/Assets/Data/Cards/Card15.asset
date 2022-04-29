@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Test Card 9
   statement: "Evaluo la mejor forma de controlar el negocio del Cannabis\n \xBFLa
     legalizo?"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: e2b9a9c36753b79429f213306e393f48, type: 3}
   isTutorial: 0
   cardGroup: 2
   positiveModifiers:
