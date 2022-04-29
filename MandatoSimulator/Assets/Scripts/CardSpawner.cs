@@ -36,7 +36,11 @@ public class CardSpawner : MonoBehaviour
     public void DecitionMade()
     {
         currentCard = cardManager.GetCard(statsManager.GetAllStats());
-        if (currentCard == null) { Debug.Log("a"); }
+        if (currentCard == null)
+        {
+            Debug.LogError("Card is null");
+            return;
+        }
         OnCardChanged?.Invoke(currentCard);
     }
 }
