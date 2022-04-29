@@ -1353,6 +1353,7 @@ MonoBehaviour:
   - {fileID: 1111954879247497998}
   - {fileID: 7308320519263437575}
   - {fileID: 4616674934389126131}
+  wobbleClip: {fileID: 8300000, guid: d7b6acc2a4a9743daa6fd1c4bdd2bfa1, type: 3}
 --- !u!95 &920198922669772028
 Animator:
   serializedVersion: 3
@@ -3756,7 +3757,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.43, y: 7.6793}
+  m_AnchoredPosition: {x: -7.43, y: 7.679306}
   m_SizeDelta: {x: 19.815735, y: 15.358612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5205765330302731547

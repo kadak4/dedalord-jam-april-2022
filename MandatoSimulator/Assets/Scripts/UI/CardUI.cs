@@ -11,11 +11,13 @@ public class CardUI : MonoBehaviour
     public TextMeshProUGUI statement;
     public Image image;
     public List<GameObject> iconReferences;
+    public AudioClip wobbleClip;
 
     private Dictionary<StatID, GameObject> statIcons;
     private CardSpawner cardSpawner;
     private IDecitionManager decitionManager;
     private IStatsManager statsManager;
+    private AudioHandler audioHandler;
     private List<IStat> stats;
 
     private void Start()
@@ -24,6 +26,7 @@ public class CardUI : MonoBehaviour
         cardSpawner = Locator.GetService<CardSpawner>();
         cardSpawner.OnCardChanged += SetCard;
         decitionManager = Locator.GetService<IDecitionManager>();
+        audioHandler = Locator.GetService<AudioHandler>();
         stats = statsManager.GetAllStats();
         for (int i = 0; i < iconReferences.Count; i++)
         {
@@ -34,6 +37,11 @@ public class CardUI : MonoBehaviour
     private void OnDestroy()
     {
         cardSpawner.OnCardChanged -= SetCard;
+    }
+
+    public void PlayWobbleSound()
+    {
+        audioHandler.PlayAudioClip(wobbleClip);
     }
 
     public void SetCard(ICard card)

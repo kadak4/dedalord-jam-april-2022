@@ -45,3 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TotalDecitions: 20
   TimelineSlider: {fileID: 0}
+  TimeForCards: 15
+  CardAnimator: {fileID: 0}
+  FailedToPickModifiers: []
+  PageTurnClip: {fileID: 8300000, guid: 1c3335fb15660460ebfdd3a74d4d510f, type: 3}
