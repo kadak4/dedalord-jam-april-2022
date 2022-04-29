@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 
 public interface IStat 
 {
@@ -8,4 +9,5 @@ public interface IStat
     string Name { get; }
     string Description { get; }
     Sprite Icon { get; }
+    event Action<float> OnStatValueChanged;
 }
