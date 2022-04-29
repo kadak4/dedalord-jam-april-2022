@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Card8
   m_EditorClassIdentifier: 
   title: Test Card 8
-  statement: "Necesito recortar el gasto publico\n\xBFVenlas las empresas estatales?"
+  statement: "Necesito recortar el gasto publico\n\xBFVendo las empresas estatales?"
   icon: {fileID: 0}
   isTutorial: 0
   cardGroup: 0
