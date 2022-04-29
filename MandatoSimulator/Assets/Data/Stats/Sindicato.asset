@@ -16,4 +16,5 @@ MonoBehaviour:
   description: 
   statID: 2
   maxValue: 100
+  initialValue: 50
   icon: {fileID: 0}
