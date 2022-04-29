@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Test Card 6
   statement: "Los indices de desempleo subieron mucho\n\xBFReparto Planes a mansalva?"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 77d869cf101fba14a95ed106883f4d0c, type: 3}
   isTutorial: 0
   cardGroup: 1
   positiveModifiers:

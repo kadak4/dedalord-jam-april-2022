@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Card5
   m_EditorClassIdentifier: 
   title: Test Card 5
-  statement: "Necesito contner la pandemia\n\xBFDeclaro toque de queda y saco las
+  statement: "Necesito contener la pandemia\n\xBFDeclaro toque de queda y saco las
     tropas a la calle?"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: fc83f283d23ff804187931bd1bfc7123, type: 3}
   isTutorial: 0
   cardGroup: 1
   positiveModifiers:

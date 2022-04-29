@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Test Card 9
   statement: "Me presionan para pagar la deuda\n\xBFInvento impuestos que digo van
     a ser temporales y\r\nnunca m\xE1s los saco?\n"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: a169fcc7a9882e84bbb33eceaa98c0e7, type: 3}
   isTutorial: 0
   cardGroup: 0
   positiveModifiers:

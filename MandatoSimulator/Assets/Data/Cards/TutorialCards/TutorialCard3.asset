@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Tuto
   statement: Tu patrionio esta representado por icono de las monedas
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: aa5b9ec304b9ffc4386026dc5c987b82, type: 3}
   isTutorial: 1
   cardGroup: 0
   positiveModifiers: []

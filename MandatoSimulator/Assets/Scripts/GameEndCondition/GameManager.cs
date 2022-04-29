@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour, IGameManager
             Loose(string.Format(looseLowStatText, statId.ToString()));
         }
 
-        if (stat.Value >= stat.MaxValue)
+        if (stat.Value >= stat.MaxValue && statId != StatID.Patrimonio)
         {
             Loose(string.Format(looseHightStatText, statId.ToString()));
         }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Test Card 9
   statement: "Hay disturbios en La Rural\n\xBFApoyo a los veganos?\n"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 4f03c80beb3021441bad406c15edb929, type: 3}
   isTutorial: 0
   cardGroup: 2
   positiveModifiers:

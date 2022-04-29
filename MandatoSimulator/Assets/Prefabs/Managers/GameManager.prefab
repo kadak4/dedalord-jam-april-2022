@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 003ec82ccd182472db721b56bf043f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minPatrimonyToWin: 50
+  minPatrimonyToWin: 150
   winText: 'Si!
 
     Asi se amasa un patrimonio digno. '
