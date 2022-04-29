@@ -461,7 +461,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1671095991}
+      - m_Target: {fileID: 1631955795}
         m_MethodName: PickedNo
         m_Mode: 1
         m_Arguments:
@@ -705,10 +705,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelSceneContext
       objectReference: {fileID: 0}
+    - target: {fileID: 8459598117184737020, guid: fcaa1d12c8a6a448083e6f0b53ddabaf,
+        type: 3}
+      propertyPath: TimelineSlider
+      value: 
+      objectReference: {fileID: 1395740643}
     - target: {fileID: 8740435964117657800, guid: fcaa1d12c8a6a448083e6f0b53ddabaf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8740435964117657800, guid: fcaa1d12c8a6a448083e6f0b53ddabaf,
         type: 3}
@@ -1548,7 +1553,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1671095991}
+      - m_Target: {fileID: 1631955795}
         m_MethodName: PickedYes
         m_Mode: 1
         m_Arguments:
@@ -2002,6 +2007,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616573410}
   m_CullTransparentMesh: 0
+--- !u!114 &1631955795 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8459598117184737020, guid: fcaa1d12c8a6a448083e6f0b53ddabaf,
+    type: 3}
+  m_PrefabInstance: {fileID: 863449032}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ca05076c62f410ab857998ae702ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1633025848
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,51 +2093,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633025848}
   m_CullTransparentMesh: 0
---- !u!1 &1671095990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1671095992}
-  - component: {fileID: 1671095991}
-  m_Layer: 0
-  m_Name: DecitionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1671095991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671095990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ca05076c62f410ab857998ae702ebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TotalDecitions: 48
-  TimelineSlider: {fileID: 1395740643}
---- !u!4 &1671095992
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671095990}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 505.9695, y: 1007.62213, z: -663.566}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1702337693
 GameObject:
   m_ObjectHideFlags: 0

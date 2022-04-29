@@ -21,4 +21,4 @@ MonoBehaviour:
     Value: 10
   negativeModifiers:
   - StatID: 3
-    Value: 10
+    Value: -10
