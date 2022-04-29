@@ -15,10 +15,10 @@ MonoBehaviour:
   title: Test Card 2
   statement: This is the test card number 2
   icon: {fileID: 0}
-  isTimed: 0
+  isTimed: 1
   positiveModifiers:
-  - ID: 1
+  - StatID: 1
     Value: 10
   negativeModifiers:
-  - ID: 1
+  - StatID: 1
     Value: 10

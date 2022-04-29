@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public interface ICard 
 {
@@ -15,6 +16,6 @@ public interface ICard
 [System.Serializable]
 public class StatModifier
 {
-    public StatID ID;
+    public StatID StatID;
     public float Value;
 }
