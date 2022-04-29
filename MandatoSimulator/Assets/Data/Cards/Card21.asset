@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Card21
   m_EditorClassIdentifier: 
   title: Test Card 9
-  statement: "Los casos de inseguridad suben mucho\n\xBFCulpo a los videojuegos?"
+  statement: "La Iglesia me pide mas plata\n\xBFLe subo el subsidio a la iglesia?"
   icon: {fileID: 21300000, guid: 4f03c80beb3021441bad406c15edb929, type: 3}
   isTutorial: 0
   cardGroup: 2
   positiveModifiers:
   - StatID: 3
-    Value: 10
+    Value: 20
   - StatID: 0
-    Value: 10
+    Value: 15
   negativeModifiers:
   - StatID: 1
-    Value: -5
-  - StatID: 1
-    Value: -5
+    Value: -15
+  - StatID: 2
+    Value: -10
