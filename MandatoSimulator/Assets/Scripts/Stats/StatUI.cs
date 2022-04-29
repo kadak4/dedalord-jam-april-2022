@@ -18,6 +18,7 @@ public class StatUI : MonoBehaviour
         statManager = Locator.GetService<IStatsManager>();
         stat = statManager.GetStat(id);
         stat.OnStatValueChanged += OnValueChanged;
+        OnValueChanged(id);
     }
 
     private void Update()
