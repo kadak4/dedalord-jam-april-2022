@@ -12,6 +12,11 @@ public class AudioHandler : MonoBehaviour
         Locator.RegisterService(this);
     }
 
+    private void OnDestroy()
+    {
+        Locator.UnregisterService<AudioHandler>();
+    }
+
     public void PlayAudioClip(AudioClip clip)
     {
         source.PlayOneShot(clip);
