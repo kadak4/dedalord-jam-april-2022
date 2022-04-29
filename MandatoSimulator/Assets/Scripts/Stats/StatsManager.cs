@@ -13,6 +13,7 @@ public class StatsManager : MonoBehaviour, IStatsManager
         {
             var clone = Instantiate(stats[i]);
             stats[i] = clone;
+            stats[i].Value = stats[i].InitialValue;
         }
         
         Locator.RegisterService<IStatsManager>(this);

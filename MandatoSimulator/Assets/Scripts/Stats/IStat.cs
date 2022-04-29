@@ -4,6 +4,7 @@ using System;
 public interface IStat 
 {
     StatID Id { get;}
+    float InitialValue { get;}
     float MaxValue { get;}
     float Value { get; set; }
     string Name { get; }
