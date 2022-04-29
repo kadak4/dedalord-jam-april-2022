@@ -7,4 +7,7 @@ public interface IDecitionManager
 {
     event Action OnDecitionMade;
     event Action OnFinishedDecitions;
+    void DidNotPick();
+    void PickedYes();
+    void PickedNo();
 }

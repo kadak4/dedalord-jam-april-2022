@@ -12,15 +12,19 @@ public class DecitionManager : MonoBehaviour, IDecitionManager
 
     public int TotalDecitions = 48;
     public Slider TimelineSlider;
+    public float TimeForCards = 15;
+    public Animator CardAnimator;
+    public List<StatModifier> FailedToPickModifiers;
 
     private CardSpawner cardSpawner;
     private IStatsManager statsManager;
     private ICard currentCard;
     private int decitionsMade = 0;
+    private float timeLeft = -1;
 
     private void Awake()
     {
-        Locator.RegisterService(this);
+        Locator.RegisterService<IDecitionManager>(this);
     }
 
     void Start()
@@ -32,8 +36,31 @@ public class DecitionManager : MonoBehaviour, IDecitionManager
 
     private void OnDestroy()
     {
-        Locator.UnregisterService<DecitionManager>();
+        Locator.UnregisterService<IDecitionManager>();
         cardSpawner.OnCardChanged -= CardChanged;
+    }
+
+    void FixedUpdate()
+    {
+        if (timeLeft != -1)
+        {
+            timeLeft -= Time.deltaTime;
+            if (timeLeft <= 0)
+            {
+                CardAnimator.SetTrigger("Fell");
+                timeLeft = -1;
+            }else if (timeLeft < 3)
+            {
+                CardAnimator.SetBool("IsTrembling", true);
+            }
+        }
+    }
+
+    public void DidNotPick()
+    {
+        UpdateUI(currentCard);
+        statsManager.ApplyModifiers(FailedToPickModifiers);
+        OnDecitionMade?.Invoke();
     }
 
     public void PickedYes()
@@ -52,10 +79,17 @@ public class DecitionManager : MonoBehaviour, IDecitionManager
 
     private void UpdateUI(ICard card)
     {
-        if (!card.IsTutorial)
+        CardAnimator.SetBool("IsTrembling", false);
+        if (card == null)
         {
             return;
         }
+        if (card.IsTutorial)
+        {
+            timeLeft = -1;
+            return;
+        }
+        timeLeft = TimeForCards;
         decitionsMade++;
         TimelineSlider.value = (float)decitionsMade / (float)TotalDecitions;
         if (decitionsMade >= TotalDecitions)
