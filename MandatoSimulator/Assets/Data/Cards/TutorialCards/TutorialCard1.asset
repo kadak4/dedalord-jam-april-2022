@@ -10,21 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a21fc33dacec48cf8937c995537247f, type: 3}
-  m_Name: Card15
+  m_Name: TutorialCard1
   m_EditorClassIdentifier: 
-  title: Test Card 9
-  statement: "Evaluo la mejor forma de controlar el negocio del Cannabis\n \xBFLa
-    legalizo?"
+  title: Tuto
+  statement: Sos el presidente de una republica, tu objetivo es tomar decisiones
+    y robar plata
   icon: {fileID: 0}
-  isTutorial: 0
-  cardGroup: 2
-  positiveModifiers:
-  - StatID: 0
-    Value: 10
-  - StatID: 1
-    Value: 10
-  negativeModifiers:
-  - StatID: 3
-    Value: -10
-  - StatID: 2
-    Value: -10
+  isTutorial: 1
+  cardGroup: 0
+  positiveModifiers: []
+  negativeModifiers: []

@@ -44,7 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minPatrimonyToWin: 50
-  winText: You won
-  looseInsufficientPatrimonyText: You  lost, you don't have enough patrimony
-  looseLowStatText: You lost, the {0} was too low
-  looseHightStatText: You lost, the {0} was too high
+  winText: 'Si!
+
+    Asi se amasa un patrimonio digno. '
+  looseInsufficientPatrimonyText: 'No! Si no!
+
+    Mas mano dura porfis'
+  looseLowStatText: Le pifiaste con {0} la proxima metele mas rosca porfis
+  looseHightStatText: Le pifiaste con {0} la proxima metele menos rosca porfis

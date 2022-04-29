@@ -28,6 +28,7 @@ public class CardUI : MonoBehaviour
         decitionManager = Locator.GetService<IDecitionManager>();
         audioHandler = Locator.GetService<AudioHandler>();
         stats = statsManager.GetAllStats();
+        statIcons = new Dictionary<StatID, GameObject>();
         for (int i = 0; i < iconReferences.Count; i++)
         {
             statIcons.Add(stats[i].Id, iconReferences[i]);
