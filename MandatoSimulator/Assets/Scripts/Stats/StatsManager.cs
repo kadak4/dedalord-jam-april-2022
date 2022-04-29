@@ -9,6 +9,13 @@ public class StatsManager : MonoBehaviour, IStatsManager
 
     private void Awake()
     {
+        // Clone the stats so we don't modify their values at runtime
+        for (int i = 0; i < stats.Count; i++)
+        {
+            var clone = Instantiate(stats[i]);
+            stats[i] = clone;
+        }
+        
         Locator.RegisterService<IStatsManager>(this);
     }
 
