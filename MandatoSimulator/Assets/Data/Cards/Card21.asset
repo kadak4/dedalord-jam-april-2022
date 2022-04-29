@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Test Card 9
   statement: "Los casos de inseguridad suben mucho\n\xBFCulpo a los videojuegos?"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 4f03c80beb3021441bad406c15edb929, type: 3}
   isTutorial: 0
   cardGroup: 2
   positiveModifiers:

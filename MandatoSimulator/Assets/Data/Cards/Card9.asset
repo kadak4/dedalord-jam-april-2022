@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Test Card 9
   statement: "Necesito recaudar mas y rapido\n\xBFSubo el impuesto al IVA?"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: a169fcc7a9882e84bbb33eceaa98c0e7, type: 3}
   isTutorial: 0
   cardGroup: 0
   positiveModifiers:

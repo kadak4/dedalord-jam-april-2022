@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Test Card 9
   statement: "La iglesia me presiona para prohibir los videojuegos\n\xBFLos satanizo?"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 1a91ad4c4694c7d4f9996c698151e88b, type: 3}
   isTutorial: 0
   cardGroup: 2
   positiveModifiers:
