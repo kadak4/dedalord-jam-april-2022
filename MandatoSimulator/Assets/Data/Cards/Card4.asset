@@ -13,13 +13,17 @@ MonoBehaviour:
   m_Name: Card4
   m_EditorClassIdentifier: 
   title: Test Card 4
-  statement: This is the test card number 4
+  statement: "Necestito mas presencia en los medios\n\xBFArmo mi propio multimedio?"
   icon: {fileID: 0}
   isTutorial: 0
   cardGroup: 1
   positiveModifiers:
   - StatID: 3
-    Value: 10
+    Value: 5
+  - StatID: 0
+    Value: 5
+  - StatID: 2
+    Value: 5
   negativeModifiers:
-  - StatID: 3
-    Value: -10
+  - StatID: 1
+    Value: -5
