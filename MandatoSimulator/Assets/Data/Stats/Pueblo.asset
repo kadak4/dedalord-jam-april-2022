@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Pueblo
   description: 
   statID: 1
-  maxValue: 1000
+  maxValue: 100
   icon: {fileID: 0}

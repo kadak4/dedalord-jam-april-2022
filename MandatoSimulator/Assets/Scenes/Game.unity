@@ -461,7 +461,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1631955795}
         m_MethodName: PickedNo
         m_Mode: 1
         m_Arguments:
@@ -1553,7 +1553,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1631955795}
         m_MethodName: PickedYes
         m_Mode: 1
         m_Arguments:
@@ -2007,6 +2007,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616573410}
   m_CullTransparentMesh: 0
+--- !u!114 &1631955795 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8459598117184737020, guid: fcaa1d12c8a6a448083e6f0b53ddabaf,
+    type: 3}
+  m_PrefabInstance: {fileID: 863449032}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ca05076c62f410ab857998ae702ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1633025848
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Sindicatos
   description: 
   statID: 2
-  maxValue: 1000
+  maxValue: 100
   icon: {fileID: 0}
