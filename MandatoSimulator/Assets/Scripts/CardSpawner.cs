@@ -29,6 +29,7 @@ public class CardSpawner : MonoBehaviour
 
     private void OnDestroy()
     {
+        Locator.UnregisterService<CardSpawner>();
         decitionManager.OnDecitionMade -= DecitionMade;
     }
 
