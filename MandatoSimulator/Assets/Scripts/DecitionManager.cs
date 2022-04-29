@@ -15,9 +15,11 @@ public class DecitionManager : MonoBehaviour, IDecitionManager
     public float TimeForCards = 15;
     public Animator CardAnimator;
     public List<StatModifier> FailedToPickModifiers;
+    public AudioClip PageTurnClip;
 
     private CardSpawner cardSpawner;
     private IStatsManager statsManager;
+    private AudioHandler audioHandler;
     private ICard currentCard;
     private int decitionsMade = 0;
     private float timeLeft = -1, timelineTargetValue;
@@ -31,6 +33,7 @@ public class DecitionManager : MonoBehaviour, IDecitionManager
     {
         statsManager = Locator.GetService<IStatsManager>();
         cardSpawner = Locator.GetService<CardSpawner>();
+        audioHandler = Locator.GetService<AudioHandler>();
         cardSpawner.OnCardChanged += CardChanged;
     }
 
@@ -95,6 +98,7 @@ public class DecitionManager : MonoBehaviour, IDecitionManager
 
     private void UpdateUI(ICard card)
     {
+        audioHandler.PlayAudioClip(PageTurnClip);
         CardAnimator.SetBool("IsTrembling", false);
         if (card == null)
         {
