@@ -21,6 +21,6 @@ public class StatUI : MonoBehaviour
 
     void OnValueChanged(float value)
     {
-        slider.value = value / stat.MaxValue;
+        slider.value = value;
     }
 }
