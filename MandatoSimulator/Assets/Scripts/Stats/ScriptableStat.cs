@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [CreateAssetMenu(menuName = "Game/Stat")]
 public class ScriptableStat : ScriptableObject, IStat
@@ -15,4 +16,6 @@ public class ScriptableStat : ScriptableObject, IStat
     public float MaxValue => maxValue;
     public float Value { get; set; }
     public Sprite Icon => icon;
+
+    public event Action<float> OnStatValueChanged;
 }
