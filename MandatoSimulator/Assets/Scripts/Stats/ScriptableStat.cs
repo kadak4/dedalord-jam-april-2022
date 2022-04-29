@@ -8,6 +8,7 @@ public class ScriptableStat : ScriptableObject, IStat
     [SerializeField, TextArea] private string description; 
     [SerializeField] private StatID statID; 
     [SerializeField] private float maxValue; 
+    [SerializeField] private float initialValue; 
     [SerializeField] private Sprite icon;
 
     private float value = 0;
@@ -16,16 +17,17 @@ public class ScriptableStat : ScriptableObject, IStat
     public string Description => description;
     public StatID Id => statID;
     public float MaxValue => maxValue;
+    public float InitialValue => initialValue;
     public float Value
     {
         get => value;
         set
         {
             this.value = value;
-            OnStatValueChanged?.Invoke(this.value / maxValue);
+            OnStatValueChanged?.Invoke(statID);
         }
     }
     public Sprite Icon => icon;
 
-    public event Action<float> OnStatValueChanged;
+    public event Action<StatID> OnStatValueChanged;
 }

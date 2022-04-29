@@ -11,6 +11,7 @@ public class StatUI : MonoBehaviour
 
     private IStatsManager statManager;
     private IStat stat;
+    private float targetValue, animationSpeed = 0.1f;
 
     void Start()
     {
@@ -19,8 +20,25 @@ public class StatUI : MonoBehaviour
         stat.OnStatValueChanged += OnValueChanged;
     }
 
-    void OnValueChanged(float value)
+    private void Update()
     {
-        slider.value = value;
+        if (targetValue != slider.value)
+        {
+            var difference = targetValue - slider.value;
+            if (Mathf.Abs(difference) < animationSpeed * Time.deltaTime)
+            {
+                slider.value = targetValue;
+            }
+            else
+            {
+                slider.value = Mathf.Lerp(slider.value, targetValue, animationSpeed);
+            }
+        }
+    }
+
+    void OnValueChanged(StatID statID)
+    {
+        var stat = statManager.GetStat(statID);
+        targetValue = stat.Value / stat.MaxValue;
     }
 }
