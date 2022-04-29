@@ -22,10 +22,10 @@ public class ScriptableStat : ScriptableObject, IStat
         set
         {
             this.value = value;
-            OnStatValueChanged?.Invoke(this.value / maxValue);
+            OnStatValueChanged?.Invoke(statID);
         }
     }
     public Sprite Icon => icon;
 
-    public event Action<float> OnStatValueChanged;
+    public event Action<StatID> OnStatValueChanged;
 }

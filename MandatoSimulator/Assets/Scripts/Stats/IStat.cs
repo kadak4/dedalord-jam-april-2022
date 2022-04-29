@@ -9,5 +9,5 @@ public interface IStat
     string Name { get; }
     string Description { get; }
     Sprite Icon { get; }
-    event Action<float> OnStatValueChanged;
+    event Action<StatID> OnStatValueChanged;
 }

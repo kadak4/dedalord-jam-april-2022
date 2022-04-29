@@ -19,8 +19,9 @@ public class StatUI : MonoBehaviour
         stat.OnStatValueChanged += OnValueChanged;
     }
 
-    void OnValueChanged(float value)
+    void OnValueChanged(StatID statID)
     {
-        slider.value = value;
+        var stat = statManager.GetStat(statID);
+        slider.value = stat.Value / stat.MaxValue;
     }
 }
