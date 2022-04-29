@@ -11,6 +11,7 @@ public interface ICard
     List<StatModifier> PositiveModifiers { get; }
     List<StatModifier> NegativeModifiers { get; }
     bool IsTutorial { get; }
+    CardGroup CardGroup { get; }
 }
 
 [System.Serializable]
