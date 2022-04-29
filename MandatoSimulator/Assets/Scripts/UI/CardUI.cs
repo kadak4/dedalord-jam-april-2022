@@ -10,15 +10,25 @@ public class CardUI : MonoBehaviour
     public TextMeshProUGUI title;
     public TextMeshProUGUI statement;
     public Image image;
+    public List<GameObject> iconReferences;
 
+    private Dictionary<StatID, GameObject> statIcons;
     private CardSpawner cardSpawner;
     private IDecitionManager decitionManager;
+    private IStatsManager statsManager;
+    private List<IStat> stats;
 
     private void Start()
     {
+        statsManager = Locator.GetService<IStatsManager>();
         cardSpawner = Locator.GetService<CardSpawner>();
         cardSpawner.OnCardChanged += SetCard;
         decitionManager = Locator.GetService<IDecitionManager>();
+        stats = statsManager.GetAllStats();
+        for (int i = 0; i < iconReferences.Count; i++)
+        {
+            statIcons.Add(stats[i].Id, iconReferences[i]);
+        }
     }
 
     private void OnDestroy()
@@ -31,6 +41,18 @@ public class CardUI : MonoBehaviour
         title.text = card.Title;
         statement.text = card.Statement;
         image.sprite = card.Icon;
+        foreach (var item in stats)
+        {
+            statIcons[item.Id].SetActive(false);
+        }
+        foreach (var item in card.PositiveModifiers)
+        {
+            statIcons[item.StatID].SetActive(true);
+        }
+        foreach (var item in card.NegativeModifiers)
+        {
+            statIcons[item.StatID].SetActive(true);
+        }
     }
 
     public void OnCardFell()
