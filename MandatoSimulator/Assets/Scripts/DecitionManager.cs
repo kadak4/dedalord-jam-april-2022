@@ -20,7 +20,7 @@ public class DecitionManager : MonoBehaviour, IDecitionManager
     private IStatsManager statsManager;
     private ICard currentCard;
     private int decitionsMade = 0;
-    private float timeLeft = -1;
+    private float timeLeft = -1, timelineTargetValue;
 
     private void Awake()
     {
@@ -52,6 +52,22 @@ public class DecitionManager : MonoBehaviour, IDecitionManager
             }else if (timeLeft < 3)
             {
                 CardAnimator.SetBool("IsTrembling", true);
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (timelineTargetValue != TimelineSlider.value)
+        {
+            var difference = timelineTargetValue - TimelineSlider.value;
+            if (Mathf.Abs(difference) < 0.1f * Time.deltaTime)
+            {
+                TimelineSlider.value = timelineTargetValue;
+            }
+            else
+            {
+                TimelineSlider.value = Mathf.Lerp(TimelineSlider.value, timelineTargetValue, 0.1f);
             }
         }
     }
@@ -91,7 +107,7 @@ public class DecitionManager : MonoBehaviour, IDecitionManager
         }
         timeLeft = TimeForCards;
         decitionsMade++;
-        TimelineSlider.value = (float)decitionsMade / (float)TotalDecitions;
+        timelineTargetValue = (float)decitionsMade / (float)TotalDecitions;
         if (decitionsMade >= TotalDecitions)
         {
             OnFinishedDecitions?.Invoke();
