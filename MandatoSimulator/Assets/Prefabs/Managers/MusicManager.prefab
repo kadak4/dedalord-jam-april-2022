@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSettings:
   - clip: {fileID: 8300000, guid: 88cc53ef2274f4fea811e507f7ca5905, type: 3}
-    volume: 0.1
+    volume: 0.3
   - clip: {fileID: 8300000, guid: 37a253e57aa314b1ea764b2d12041d52, type: 3}
-    volume: 0.1
+    volume: 0.3
   fadeTime: 3
