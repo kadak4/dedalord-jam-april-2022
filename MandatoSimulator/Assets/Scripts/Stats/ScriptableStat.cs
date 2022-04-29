@@ -10,11 +10,21 @@ public class ScriptableStat : ScriptableObject, IStat
     [SerializeField] private float maxValue; 
     [SerializeField] private Sprite icon;
 
+    private float value = 0;
+    
     public string Name => name;
     public string Description => description;
     public StatID Id => statID;
     public float MaxValue => maxValue;
-    public float Value { get; set; }
+    public float Value
+    {
+        get => value;
+        set
+        {
+            this.value = value;
+            OnStatValueChanged?.Invoke(this.value / maxValue);
+        }
+    }
     public Sprite Icon => icon;
 
     public event Action<float> OnStatValueChanged;

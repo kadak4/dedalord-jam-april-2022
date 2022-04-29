@@ -10,6 +10,13 @@ public class CardsManager : MonoBehaviour, ICardManager
     
     private void Awake()
     {
+        // Clone the cards so we don't modify their values at runtime
+        for (int i = 0; i < cards.Count; i++)
+        {
+            var clone = Instantiate(cards[i]);
+            cards[i] = clone;
+        }
+
         Locator.RegisterService<ICardManager>(this);
     }
 
