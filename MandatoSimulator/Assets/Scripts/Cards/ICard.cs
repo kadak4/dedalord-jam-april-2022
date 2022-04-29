@@ -10,7 +10,7 @@ public interface ICard
     Sprite Icon { get; }
     List<StatModifier> PositiveModifiers { get; }
     List<StatModifier> NegativeModifiers { get; }
-    bool IsTimed { get; }
+    bool IsTutorial { get; }
 }
 
 [System.Serializable]

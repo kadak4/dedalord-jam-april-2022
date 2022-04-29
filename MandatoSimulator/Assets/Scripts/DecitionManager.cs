@@ -52,7 +52,7 @@ public class DecitionManager : MonoBehaviour, IDecitionManager
 
     private void UpdateUI(ICard card)
     {
-        if (!card.IsTimed)
+        if (!card.IsTutorial)
         {
             return;
         }
