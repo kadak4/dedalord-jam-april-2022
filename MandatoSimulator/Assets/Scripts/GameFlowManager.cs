@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Padoru.Core;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameFlowManager : MonoBehaviour
 {
@@ -26,6 +27,6 @@ public class GameFlowManager : MonoBehaviour
 
     public void RestartGame()
     {
-
+        SceneManager.LoadScene("Game");
     }
 }
