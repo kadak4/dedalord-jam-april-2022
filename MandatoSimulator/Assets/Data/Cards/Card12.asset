@@ -19,11 +19,11 @@ MonoBehaviour:
   cardGroup: 0
   positiveModifiers:
   - StatID: 0
-    Value: 5
+    Value: 30
   - StatID: 3
-    Value: 5
+    Value: 10
   negativeModifiers:
   - StatID: 1
-    Value: -5
+    Value: -10
   - StatID: 2
-    Value: -5
+    Value: -10

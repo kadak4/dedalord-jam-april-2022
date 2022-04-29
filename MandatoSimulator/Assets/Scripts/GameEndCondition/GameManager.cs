@@ -38,6 +38,11 @@ public class GameManager : MonoBehaviour, IGameManager
     {
         Locator.UnregisterService<IGameManager>();
         
+        
+    }
+
+    private void UnsubscribeEverything()
+    {
         decitionManager.OnFinishedDecitions -= OnFinishedDecitions;
         var stats = statsManager.GetAllStats();
         foreach (var stat in stats)
@@ -76,11 +81,14 @@ public class GameManager : MonoBehaviour, IGameManager
 
     private void Win(string winText)
     {
+        UnsubscribeEverything();
         OnGameWon?.Invoke(winText);
+
     }
 
     private void Loose(string looseText)
     {
+        UnsubscribeEverything();
         OnGameLost?.Invoke(looseText);
     }
 }
