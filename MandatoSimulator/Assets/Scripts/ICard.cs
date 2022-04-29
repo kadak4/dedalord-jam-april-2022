@@ -12,6 +12,7 @@ public interface ICard
     bool IsTimed { get; }
 }
 
+[System.Serializable]
 public class StatModifier
 {
     public StatID ID;
