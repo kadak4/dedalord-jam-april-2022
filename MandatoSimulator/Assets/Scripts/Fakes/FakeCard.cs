@@ -15,6 +15,7 @@ public class FakeCard : MonoBehaviour, ICard
     public List<StatModifier> NegativeModifiers => negativeModifiers;
 
     public bool IsTutorial => isTimed;
+    public CardGroup CardGroup { get; }
 
 
     [TextArea] [SerializeField] private string title;

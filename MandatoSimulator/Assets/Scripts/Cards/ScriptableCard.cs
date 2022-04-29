@@ -8,6 +8,7 @@ public class ScriptableCard : ScriptableObject, ICard
     [SerializeField, TextArea] private string statement;
     [SerializeField] private Sprite icon;
     [SerializeField] private bool isTutorial;
+    [SerializeField] private CardGroup cardGroup;
     [SerializeField] private List<StatModifier> positiveModifiers;
     [SerializeField] private List<StatModifier> negativeModifiers;
 
@@ -17,4 +18,5 @@ public class ScriptableCard : ScriptableObject, ICard
     public List<StatModifier> PositiveModifiers => positiveModifiers;
     public List<StatModifier> NegativeModifiers => negativeModifiers;
     public bool IsTutorial => isTutorial;
+    public CardGroup CardGroup => cardGroup;
 }

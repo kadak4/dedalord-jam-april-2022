@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a21fc33dacec48cf8937c995537247f, type: 3}
-  m_Name: Card4
+  m_Name: Card9
   m_EditorClassIdentifier: 
-  title: Test Card 4
-  statement: This is the test card number 4
+  title: Test Card 9
+  statement: This is the test card number 9
   icon: {fileID: 0}
   isTutorial: 0
-  cardGroup: 1
+  cardGroup: 2
   positiveModifiers:
   - StatID: 3
     Value: 10
