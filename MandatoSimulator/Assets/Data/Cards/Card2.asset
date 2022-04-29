@@ -13,12 +13,18 @@ MonoBehaviour:
   m_Name: Card2
   m_EditorClassIdentifier: 
   title: Test Card 2
-  statement: This is the test card number 2
+  statement: "Hay bastante descontento en general y  tengo muchas marchas por semana\n\xBFReprimo
+    las marchas?"
   icon: {fileID: 0}
-  isTimed: 1
+  isTutorial: 0
+  cardGroup: 1
   positiveModifiers:
-  - StatID: 1
-    Value: 10
+  - StatID: 3
+    Value: 5
+  - StatID: 0
+    Value: 5
   negativeModifiers:
   - StatID: 1
-    Value: -10
+    Value: -5
+  - StatID: 2
+    Value: -5

@@ -13,12 +13,18 @@ MonoBehaviour:
   m_Name: Card1
   m_EditorClassIdentifier: 
   title: Test Card 1
-  statement: This is the test card number 1
+  statement: "Tengo serios problemas de transporte publico.\n\xBFPrometo viajes interestlares
+    an CABA?"
   icon: {fileID: 0}
-  isTimed: 1
+  isTutorial: 0
+  cardGroup: 1
   positiveModifiers:
-  - StatID: 0
+  - StatID: 1
     Value: 10
-  negativeModifiers:
+  - StatID: 2
+    Value: 5
   - StatID: 0
+    Value: 5
+  negativeModifiers:
+  - StatID: 3
     Value: -10

@@ -11,7 +11,8 @@ public class CardsManager : MonoBehaviour, ICardManager
     private List<ScriptableCard> groupOneCards;
     private List<ScriptableCard> groupTwoCards;
     private List<ScriptableCard> groupThreeCards;
-    
+    private List<ScriptableCard> tutorialCards;
+
     private int groupIndex;
     
     private void Awake()
@@ -31,11 +32,17 @@ public class CardsManager : MonoBehaviour, ICardManager
         groupOneCards = new List<ScriptableCard>();
         groupTwoCards = new List<ScriptableCard>();
         groupThreeCards = new List<ScriptableCard>();
+        tutorialCards = new List<ScriptableCard>();
 
         // Clone the cards so we don't modify their values at runtime
         for (int i = 0; i < cards.Count; i++)
         {
             var clone = Instantiate(cards[i]);
+            if (clone.IsTutorial)
+            {
+                tutorialCards.Add(clone);
+                continue;
+            }
             if (clone.CardGroup == CardGroup.Grupo1)
             {
                 groupOneCards.Add(clone);
@@ -53,6 +60,12 @@ public class CardsManager : MonoBehaviour, ICardManager
 
     public ICard GetCard(List<IStat> currentStats)
     {
+        if (tutorialCards.Count > 0)
+        {
+            var item = tutorialCards[0];
+            tutorialCards.RemoveAt(0);
+            return item;
+        }
         var index = groupIndex;
         groupIndex = (groupIndex + 1) % Enum.GetNames(typeof(CardGroup)).Length;
         return GetRandomCardFrom((CardGroup)index);

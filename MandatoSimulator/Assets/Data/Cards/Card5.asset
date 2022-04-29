@@ -13,13 +13,16 @@ MonoBehaviour:
   m_Name: Card5
   m_EditorClassIdentifier: 
   title: Test Card 5
-  statement: This is the test card number 5
+  statement: "Necesito contner la pandemia\n\xBFDeclaro toque de queda y saco las
+    tropas a la calle?"
   icon: {fileID: 0}
   isTutorial: 0
   cardGroup: 1
   positiveModifiers:
   - StatID: 3
-    Value: 10
+    Value: 5
   negativeModifiers:
-  - StatID: 3
-    Value: -10
+  - StatID: 1
+    Value: -4
+  - StatID: 2
+    Value: -5

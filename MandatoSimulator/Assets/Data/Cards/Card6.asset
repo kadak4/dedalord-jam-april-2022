@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: Card6
   m_EditorClassIdentifier: 
   title: Test Card 6
-  statement: This is the test card number 6
+  statement: "Los indices de desempleo subieron mucho\n\xBFReparto Planes a mansalva?"
   icon: {fileID: 0}
   isTutorial: 0
   cardGroup: 1
   positiveModifiers:
-  - StatID: 3
+  - StatID: 1
+    Value: 10
+  - StatID: 2
     Value: 10
   negativeModifiers:
   - StatID: 3

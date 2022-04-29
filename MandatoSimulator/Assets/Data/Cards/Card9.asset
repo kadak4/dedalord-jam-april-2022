@@ -13,13 +13,17 @@ MonoBehaviour:
   m_Name: Card9
   m_EditorClassIdentifier: 
   title: Test Card 9
-  statement: This is the test card number 9
+  statement: "Necesito recaudar mas y rapido\n\xBFSubo el impuesto al IVA?"
   icon: {fileID: 0}
   isTutorial: 0
-  cardGroup: 2
+  cardGroup: 0
   positiveModifiers:
+  - StatID: 0
+    Value: 5
   - StatID: 3
-    Value: 10
+    Value: 5
   negativeModifiers:
-  - StatID: 3
-    Value: -10
+  - StatID: 1
+    Value: -5
+  - StatID: 2
+    Value: -5
