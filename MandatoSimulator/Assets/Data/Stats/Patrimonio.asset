@@ -15,6 +15,6 @@ MonoBehaviour:
   name: Patrimonio
   description: 
   statID: 0
-  maxValue: 100
+  maxValue: 300
   initialValue: 50
   icon: {fileID: 0}
