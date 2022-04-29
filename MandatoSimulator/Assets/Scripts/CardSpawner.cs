@@ -11,7 +11,7 @@ public class CardSpawner : MonoBehaviour
     private ICard currentCard;
     private ICardManager cardManager;
     private IStatsManager statsManager;
-    private DecitionManager decitionManager;
+    private IDecitionManager decitionManager;
 
     private void Awake()
     {
@@ -22,7 +22,7 @@ public class CardSpawner : MonoBehaviour
     {
         cardManager = Locator.GetService<ICardManager>();
         statsManager = Locator.GetService<IStatsManager>();
-        decitionManager = Locator.GetService<DecitionManager>();
+        decitionManager = Locator.GetService<IDecitionManager>();
         decitionManager.OnDecitionMade += DecitionMade;
         Invoke(nameof(DecitionMade),0.2f);
     }
